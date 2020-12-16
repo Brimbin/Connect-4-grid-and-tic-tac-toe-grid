@@ -1,0 +1,19 @@
+# Connect 4 grid
+board = []
+
+for i in range(6):
+    board.append(["0"]*7)
+
+m = 7
+print(" "*3 + (" "*3).join(["{}".format(i) for i in range(0,m)]))
+for j,bb in enumerate(board):
+    print("{}: ".format(j)  + " | ".join(bb))
+
+# tic tac toe grid
+board2 = []
+for i in range(3):
+    board2.append(["0"]*3)
+m = 3
+print(" "*3 +(" "*3).join(["{}".format(i) for i in range(0,m)]))
+for j,bb in enumerate(board2):
+    print("{}: ".format(j)+ " | ".join(bb))
